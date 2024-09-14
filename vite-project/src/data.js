@@ -1,48 +1,60 @@
 export const portfolioData = [
     {
-        title: "Customer Churn Prediction",
+        title: "Big data Project",
         description: {
-            en: "Developed a predictive model to identify customers at risk of churning. The project involved data preprocessing, feature engineering, and model training using machine learning algorithms to provide actionable insights to reduce churn.",
-            it: "Ho sviluppato un modello predittivo per identificare i clienti a rischio di abbandono. Il progetto ha coinvolto la preparazione dei dati, l'ingegneria delle caratteristiche e l'addestramento del modello utilizzando algoritmi di machine learning per fornire approfondimenti utili a ridurre il churn.",
-            jp: "顧客の離脱リスクを予測するモデルを開発しました。データの前処理、特徴エンジニアリング、機械学習アルゴリズムを使用したモデルのトレーニングを行い、離脱を減少させるための実行可能なインサイトを提供しました。"
+            en: "The project leverages Big Data techniques to develop a stroke prediction model using a dataset of 5,110 patients. Through data cleaning and transformation of categorical variables, the data was standardized and processed using MapReduce and Spark frameworks. The pipeline efficiently handled large volumes of data, employing oversampling and feature standardization. Machine learning models such as Random Forest, Decision Tree, and Naïve Bayes were implemented, with Random Forest delivering the best performance. This project highlights the role of Big Data in healthcare by enabling accurate and scalable predictive models for stroke prevention.",
+            it: "Il progetto utilizza tecniche di Big Data per sviluppare un modello predittivo dell'ictus, basato su un dataset di 5110 pazienti. Attraverso processi di data cleaning e trasformazione delle variabili categoriali, i dati sono stati standardizzati e preparati per essere elaborati con MapReduce e Spark. La pipeline ha gestito grandi volumi di dati con tecniche di oversampling e standardizzazione. Sono stati implementati modelli di machine learning come Random Forest, Decision Tree e Naïve Bayes, con il Random Forest che ha ottenuto i migliori risultati. Questo progetto dimostra l'importanza dei Big Data nella prevenzione medica attraverso modelli predittivi accurati e scalabili.",
+            jp: "このプロジェクトは、ビッグデータ技術を活用して、5,110人の患者データを用いた脳卒中予測モデルを開発しています。データのクレンジングとカテゴリ変数の変換を行った後、データは標準化され、MapReduceやSparkフレームワークを使用して処理されました。このパイプラインは、大規模データを効率的に処理し、オーバーサンプリングや特徴量の標準化を行いました。ランダムフォレスト、決定木、ナイーブベイズなどの機械学習モデルが適用され、ランダムフォレストが最も高い精度を示しました。このプロジェクトは、ビッグデータが医療における予測モデルの正確性とスケーラビリティを高め、脳卒中予防に貢献することを示しています。"
         },
-        tags: ["Machine Learning", "Data Science", "Predictive Analytics"],
+        tags: ["Machine Learning", "Big Data", "Map Reduce","ApacheSpark"],
         image: "bigdata.png",
-        link: "https://github.com/yourusername/churn-prediction",
-        documentation: "https://yourwebsite.com/churn-prediction-doc",
+        link: "https://github.com/faziofrancesco/BigData/tree/master",
+        documentation: "https://github.com/faziofrancesco/BigData/blob/master/StrokePrediction.pdf",
     },
     {
-        title: "Sentiment Analysis on Social Media",
+        title: "Optimization for Machine Learning Project",
         description: {
-            en: "Built a sentiment analysis system to classify and track public opinion on social media posts. The project included natural language processing (NLP) techniques and text classification models.",
-            it: "Ho sviluppato un sistema di analisi del sentiment per classificare e monitorare l'opinione pubblica sui post dei social media. Il progetto ha incluso tecniche di elaborazione del linguaggio naturale (NLP) e modelli di classificazione del testo.",
-            jp: "ソーシャルメディアの投稿に関する世論を分類・追跡するために、感情分析システムを構築しました。プロジェクトには自然言語処理（NLP）技術とテキスト分類モデルが含まれています。"
+            en: "The project focuses on implementing a Support Vector Machine (SVM) algorithm for Multiple Instance Learning (MIL). Using the \"dataset14MIL.mat\" dataset, the goal is to perform a linear separation of the \"bags\" based on the standard MIL assumption. The Block Coordinate Descent (BCD) method is applied to solve the problem, with the parameter \n" +
+                "𝐶\n" +
+                "=\n" +
+                "1\n" +
+                "C=1. At each iteration, the separating hyperplane is displayed, and the model's accuracy on the training set is computed.",
+            it: "Il progetto si concentra sull'implementazione di un algoritmo di Support Vector Machine (SVM) per Multiple Instance Learning (MIL). Utilizzando il dataset \"dataset14MIL.mat\", l'obiettivo è effettuare una separazione lineare dei \"bags\" basata sull'assunzione MIL standard. Viene applicato il metodo Block Coordinate Descent (BCD) per risolvere il problema, con il parametro \n" +
+                "𝐶\n" +
+                "=\n" +
+                "1\n" +
+                "C=1. Durante ogni iterazione, viene visualizzato l'iperpiano separatore e viene calcolata la correttezza del modello sul set di addestramento.",
+            jp: "このプロジェクトは、Multiple Instance Learning (MIL) のためのサポートベクターマシン (SVM) アルゴリズムの実装に焦点を当てています。 \"dataset14MIL.mat\" データセットを使用して、標準的なMILの仮定に基づいて「バッグ」の線形分離を行います。 Block Coordinate Descent (BCD) 法を使用して問題を解決し、パラメーター \n" +
+                "𝐶\n" +
+                "=\n" +
+                "1\n" +
+                "C=1 を設定します。 各イテレーションでは、分離ハイパープレーンが表示され、トレーニングセットに対するモデルの正確性が計算されます。"
         },
-        tags: ["NLP", "Social Media", "Data Analysis"],
+        tags: ["SVM", "Machine Learning", "Octave"],
         image: "svm.png",
-        link: "https://github.com/yourusername/sentiment-analysis",
-        documentation: "https://yourwebsite.com/sentiment-analysis-doc",
+        link: "https://github.com/faziofrancesco/OPTIMIZATIONFORMACHINELEARNING",
+        documentation: "https://github.com/faziofrancesco/OPTIMIZATIONFORMACHINELEARNING/blob/master/project14.pdf",
     },
     {
-        title: "Recommendation System",
+        title: "IA Project ",
         description: {
-            en: "Developed a recommendation system that provides personalized product recommendations to users based on their behavior and preferences. The system utilized collaborative filtering and content-based methods.",
-            it: "Ho sviluppato un sistema di raccomandazione che fornisce consigli personalizzati sui prodotti agli utenti in base al loro comportamento e preferenze. Il sistema ha utilizzato metodi di filtraggio collaborativo e basato sul contenuto.",
-            jp: "ユーザーの行動と好みに基づいてパーソナライズされた製品を推奨するレコメンデーションシステムを開発しました。システムは協調フィルタリングとコンテンツベースの方法を使用しました。"
+            en: "I developed an artificial intelligence specialized in poker using ASP programs. To test its capabilities, I used a website and sent commands through Selenium and Java. The AI analyzed the player's budget and the moves of other players to decide whether to play conservatively, normally, or aggressively. I ran several tests, and the results were highly positive, showing the AI's ability to adapt to different game situations effectively.",
+            it: "Ho sviluppato un'intelligenza artificiale specializzata nel gioco del poker utilizzando programmi ASP. Per testare le sue capacità, ho utilizzato un sito web e inviato comandi tramite Selenium e Java. L'intelligenza artificiale, analizzando il budget del giocatore e le mosse degli altri partecipanti, decideva se adottare una strategia conservativa, normale o aggressiva. Ho eseguito diversi test, ottenendo risultati molto positivi, che dimostrano l'efficacia dell'IA nell'adattarsi alle varie situazioni di gioco.",
+            jp: "私は、ASPプログラムを使用してポーカーに特化した人工知能を開発しました。その性能をテストするために、SeleniumとJavaを介してコマンドを送信し、ウェブサイトを使用しました。AIはプレイヤーの予算や他のプレイヤーの動きを分析し、保守的、通常、または攻撃的な戦略を選択しました。複数のテストを行い、その結果は非常に良好で、AIがさまざまなゲーム状況に適応できる能力を示しました。"
         },
-        tags: ["Recommendation System", "Machine Learning", "Personalization"],
+        tags: ["IA", "ASP", "Selenium","Java"],
         image: "robot.jpg",
-        link: "https://github.com/yourusername/recommendation-system",
-        documentation: "https://yourwebsite.com/recommendation-system-doc",
+        link: "https://github.com/faziofrancesco/dlvPoker",
+        documentation: "https://github.com/faziofrancesco/dlvPoker",
     },
     {
-        title: "M",
+        title: "Deep Learning Project",
         description: {
-            en: "Created a time series forecasting model to predict future sales trends. The project focused on analyzing historical sales data and developing models to assist businesses in making data-driven decisions.",
-            it: "Ho creato un modello di previsione delle serie temporali per prevedere le tendenze future delle vendite. Il progetto si è concentrato sull'analisi dei dati storici delle vendite e sullo sviluppo di modelli per aiutare le aziende a prendere decisioni basate sui dati.",
-            jp: "将来の販売トレンドを予測するために時系列予測モデルを作成しました。プロジェクトは過去の販売データを分析し、データ駆動型の意思決定を支援するモデルを開発することに重点を置いていました。"
+            en: "In this project, I developed a Recurrent Neural Network (RNN) to predict values and detect anomalies in test data using Deep Learning techniques. In the first task, the network was trained to predict future values of a time series using a GRU model, achieving excellent accuracy. In the second task, I applied an autoencoder to detect anomalies, aiming to recognize signs of Parkinson's disease in the analyzed patients. The model showed strong learning capabilities and time series analysis performance.",
+            it: "Nel progetto, ho sviluppato una rete neurale ricorrente (RNN) per prevedere valori e identificare anomalie nei dati del test, utilizzando tecniche di Deep Learning. Nel primo compito, la rete è stata addestrata a prevedere i valori futuri di una serie temporale utilizzando un modello GRU, con ottimi risultati nella precisione. Nel secondo compito, ho applicato un autoencoder per identificare anomalie nei dati, con l'obiettivo di rilevare segni di Parkinson nei pazienti analizzati. Il modello ha dimostrato ottime capacità di apprendimento e analisi delle serie temporali.",
+            jp: "このプロジェクトでは、ディープラーニング技術を使用して、テストデータ内の値を予測し、異常を検出するためのリカレントニューラルネットワーク（RNN）を開発しました。最初のタスクでは、GRUモデルを使用して時系列データの未来の値を予測するようにネットワークをトレーニングし、優れた精度を達成しました。2つ目のタスクでは、異常を検出するためにオートエンコーダーを適用し、分析対象の患者におけるパーキンソン病の兆候を特定することを目指しました。このモデルは、時系列データの学習と解析に優れた能力を示しました。"
         },
-        tags: ["Time Series", "Forecasting", "Business Analytics"],
+        tags: ["RNN", "GRU", "Autoencoder","Python","Deep Learning"],
         image: "deep.png",
         link: "https://github.com/yourusername/time-series-forecasting",
         documentation: "https://yourwebsite.com/time-series-forecasting-doc",
@@ -50,14 +62,14 @@ export const portfolioData = [
     {
         title: "Data warehouse Project",
         description: {
-            en: "Developed an interactive data visualization dashboard to present key metrics and insights. The dashboard was designed for business stakeholders to easily monitor performance and trends.",
-            it: "Ho sviluppato una dashboard di visualizzazione interattiva dei dati per presentare metriche chiave e approfondimenti. La dashboard è stata progettata per consentire ai responsabili aziendali di monitorare facilmente le prestazioni e le tendenze.",
-            jp: "主要な指標とインサイトを表示するインタラクティブなデータビジュアリゼーションダッシュボードを開発しました。ビジネス関係者がパフォーマンスとトレンドを簡単に監視できるように設計されています。"
+            en: "The analysis utilized the Global Terrorism Database (1970-2017) and employed advanced technologies such as Pentaho and Tableau for data warehousing. The study compared annual deaths and injuries, terrorist participation rates, attack types, and global trends. Specifically, the analysis focused on two key aspects: U.S. casualties and regional attack patterns. These comparisons allowed for the identification of significant patterns and the forecasting of future terrorist activities. The analytical and data visualization techniques provided a comprehensive understanding of global terrorism dynamics.",
+            it: "L'analisi ha utilizzato il Global Terrorism Database (1970-2017) e ha fatto ricorso a tecnologie avanzate come Pentaho e Tableau per il data warehousing. Sono stati confrontati annualmente i decessi e le ferite, i tassi di partecipazione dei terroristi, i tipi di attacchi e le tendenze globali. In particolare, l'analisi si è focalizzata su due aspetti chiave: le vittime negli Stati Uniti e i modelli di attacco a livello regionale. Questi confronti hanno permesso di identificare schemi significativi e di fare previsioni sulle future attività terroristiche. Le tecniche analitiche e di visualizzazione dei dati hanno fornito una comprensione approfondita delle dinamiche globali del terrorismo.",
+            jp: "この分析では、Global Terrorism Database（1970-2017）を使用し、データウェアハウジングにはPentahoとTableauなどの先進技術を利用しました。年ごとの死亡者数や負傷者数、テロリストの参加率、攻撃の種類、そしてグローバルトレンドを比較しました。特に、米国の犠牲者数と地域別の攻撃パターンに焦点を当てました。これらの比較により、重要なパターンを特定し、今後のテロ活動を予測することができました。分析手法とデータ可視化技術により、テロリズムのグローバルな動態についての包括的な理解が得られました。"
         },
-        tags: ["Data Visualization", "Business Intelligence", "Dashboard"],
+        tags: ["Data Visualization", "Business Intelligence", "ETL","Pentaho","Tableau"],
         image: "terrorism.jpg",
-        link: "https://github.com/yourusername/data-visualization-dashboard",
-        documentation: "https://yourwebsite.com/data-visualization-doc",
+        link: "https://github.com/faziofrancesco/DwProject",
+        documentation: "https://github.com/faziofrancesco/DwProject",
     }
 ];
 export const skillsData = {
@@ -98,13 +110,14 @@ export const skillsData = {
             skills: [
                 { name: 'Analisi delle Reti Sociali' },
                 { name: 'Intelligenza Artificiale' },
+                {name: 'Analista dei Dati'}
             ],
         },
         {
             category: 'Competenze Linguistiche',
             skills: [
                 { name: 'Italiano', level: 'Madrelingua' },
-                { name: 'Inglese', level: 'Fluente (C1/C2)' },
+                { name: 'Inglese', level: 'Fluente (B1/B2)' },
                 { name: 'Giapponese', level: 'Intermedio (N4 JLPT)' },
             ],
         },
@@ -153,13 +166,14 @@ export const skillsData = {
             skills: [
                 { name: 'Social Network Analysis' },
                 { name: 'Artificial Intelligence' },
+                {name: 'Data Analyst'}
             ],
         },
         {
             category: 'Language Skills',
             skills: [
                 { name: 'Italian', level: 'Native' },
-                { name: 'English', level: 'Fluent (C1/C2)' },
+                { name: 'English', level: 'Fluent (B1/B2)' },
                 { name: 'Japanese', level: 'Intermediate (N4 JLPT)' },
             ],
         },
@@ -208,13 +222,14 @@ export const skillsData = {
             skills: [
                 { name: 'ソーシャルネットワーク分析' },
                 { name: '人工知能' },
+                {name: 'データアナリスト'}
             ],
         },
         {
             category: '言語スキル',
             skills: [
                 { name: 'イタリア語', level: 'ネイティブ' },
-                { name: '英語', level: '流暢 (C1/C2)' },
+                { name: '英語', level: '流暢 (B1/B2)' },
                 { name: '日本語', level: '中級 (N4 JLPT)' },
             ],
         },
@@ -280,4 +295,33 @@ export const trad1 = {
         skillsTitle: 'ポートフォリオ',
         // altre traduzioni...
     },
+};
+export const contactInfo = {
+    it: {
+        title: "Contatti",
+        email: "Email",
+        cv: "CV",
+        github: "GitHub",
+        emailLink: "francescofazio1100001@gmail.com",
+        cvLink: "https://drive.google.com/file/d/1NPBZmZhmC_tRacow8GKThbkSOUqLsqU2/view?usp=sharing",
+        githubLink: "https://github.com/faziofrancesco"
+    },
+    en: {
+        title: "Contact",
+        email: "Email",
+        cv: "CV",
+        github: "GitHub",
+        emailLink: "francescofazio1100001@gmail.com",
+        cvLink: "https://drive.google.com/file/d/1NPBZmZhmC_tRacow8GKThbkSOUqLsqU2/view?usp=sharing",
+        githubLink: "https://github.com/faziofrancesco"
+    },
+    jp: {
+        title: "連絡先",
+        email: "メール",
+        cv: "履歴書",
+        github: "GitHub",
+        emailLink: "francescofazio1100001@gmail.com",
+        cvLink: "https://drive.google.com/file/d/1NPBZmZhmC_tRacow8GKThbkSOUqLsqU2/view?usp=sharing",
+        githubLink: "https://github.com/faziofrancesco"
+    }
 };

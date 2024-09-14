@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Skills.css';
-import { skillsData} from '../data';
+import { skillsData } from '../data';
 import { FaCode, FaLightbulb, FaLanguage, FaRunning, FaDatabase } from 'react-icons/fa';
 import './styles.css';
 import { trad } from '../data';
@@ -37,21 +37,27 @@ const Skills = ({ language }) => {
             <h2 className="skills-title">{title}</h2>
             <div className="skills-container">
                 {currentSkillsData.map((section, index) => (
-                    <div key={index} className="skills-category" onClick={() => toggleExpand(index)}>
+                    <div
+                        key={index}
+                        className={`skills-category ${expanded === index ? 'expanded' : ''}`}
+                        onClick={() => toggleExpand(index)}
+                    >
                         <div className="category-header">
                             <div className="icon">{iconMap[section.category]}</div>
                             <h3 className="category-title">{section.category}</h3>
                         </div>
-                        {expanded === index && (
-                            <ul className="skills-list">
-                                {section.skills.map((skill, idx) => (
-                                    <li key={idx} className="skill-item">
-                                        <span className="skill-name">{skill.name}</span>
-                                        {skill.level && <span className="skill-level">{skill.level}</span>}
-                                    </li>
-                                ))}
-                            </ul>
-                        )}
+                        <div className="skills-content">
+                            {expanded === index && (
+                                <ul className="skills-list">
+                                    {section.skills.map((skill, idx) => (
+                                        <li key={idx} className="skill-item">
+                                            <span className="skill-name">{skill.name}</span>
+                                            {skill.level && <span className="skill-level">{skill.level}</span>}
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                        </div>
                     </div>
                 ))}
             </div>

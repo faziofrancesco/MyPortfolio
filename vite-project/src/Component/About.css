@@ -1,81 +1,134 @@
+/* Sezione About */
 .about-section {
-    background-color: #f8f9fa; /* Sfondo neutro */
-    padding: 30px 20px; /* Riduzione del padding */
+    background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%); /* Gradiente di sfondo moderno */
+    padding: 80px 20px; /* Spazio generoso per un layout arioso */
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
     width: 100%;
-    min-height: 40vh; /* Altezza minima leggermente più grande dell'header */
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+    min-height: 70vh; /* Altezza aumentata per un maggiore impatto visivo */
+    position: relative;
+    overflow: hidden;
 }
 
+/* Contenitore About */
 .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px; /* Spazio ridotto tra gli elementi */
-    max-width: 1000px; /* Larghezza massima ridotta */
+    gap: 30px;
+    max-width: 1200px;
     margin: 0 auto;
+    align-items: center;
     text-align: center;
+    position: relative;
 }
 
+/* Testo About */
 .about-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #333;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Sfondo leggero e semi-trasparente */
+    border-radius: 15px; /* Angoli arrotondati */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Ombra morbida */
 }
 
+/* Titolo Testo */
 .about-text h2 {
-    font-size: 1.6rem; /* Dimensione del titolo leggermente ridotta */
-    margin-bottom: 10px;
-    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #00796b; /* Verde scuro per contrasto */
     position: relative;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* Sottolineatura del Titolo */
 .about-text h2::after {
     content: '';
     position: absolute;
-    width: 50px;
-    height: 3px;
-    background-color: #ff6f61;
+    width: 80px;
+    height: 5px;
+    background-color: #00796b; /* Linea verde scuro */
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 }
 
+/* Paragrafo Testo */
 .about-text p {
-    font-size: 0.9rem; /* Testo più piccolo e compatto */
-    line-height: 1.5;
-    margin-top: 8px;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
 }
 
+/* Immagine About */
 .about-image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Stile Immagine */
 .about-image img {
     width: 100%;
-    max-width: 250px; /* Immagine leggermente più piccola */
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 300px;
+    height: 300px; /* Altezza fissa per garantire rotondità */
+    border-radius: 50%; /* Cerchio perfetto */
+    border: 6px solid #00796b; /* Bordo verde scuro */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Ombra migliorata */
+    object-fit: cover; /* Assicura la corretta visualizzazione dell'immagine */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover Immagine */
 .about-image img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1); /* Leggera ingrandimento al passaggio del mouse */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* Ombra più intensa */
+}
+
+/* Responsive per tablet */
+@media (max-width: 1024px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
 }
 
 /* Responsive per dispositivi mobili */
 @media (max-width: 768px) {
-    .about-container {
-        grid-template-columns: 1fr;
-        text-align: center;
+    .about-section {
+        padding: 50px 10px;
+    }
+
+    .about-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+    }
+
+    .about-image img {
+        max-width: 250px;
+        height: 250px; /* Altezza proporzionata */
+    }
+}
+
+/* Responsive per extra small devices */
+@media (max-width: 480px) {
+    .about-section {
+        padding: 30px 5px;
     }
 
     .about-text h2 {
@@ -83,24 +136,11 @@
     }
 
     .about-text p {
-        font-size: 0.85rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .about-section {
-        padding: 20px;
-    }
-
-    .about-text h2 {
-        font-size: 1.3rem;
-    }
-
-    .about-text p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .about-image img {
-        max-width: 200px; /* Immagine più piccola per dispositivi mobili */
+        max-width: 200px;
+        height: 200px; /* Altezza proporzionata */
     }
 }
