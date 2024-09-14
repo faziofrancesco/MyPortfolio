@@ -6,7 +6,7 @@ export default defineConfig({
   base: '/',
   plugins: [react()],
   build: {
-    outDir: 'build', // Assicurati che corrisponda al percorso di build atteso
+    outDir: 'dist', // Assicurati che corrisponda al percorso di build atteso
     rollupOptions: {
       output: {
         // Configurazioni addizionali di output, se necessario
