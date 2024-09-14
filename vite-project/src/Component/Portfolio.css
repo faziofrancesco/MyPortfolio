@@ -1,254 +1,264 @@
 /* Portfolio Section */
 .portfolio-section {
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
+    padding: 6rem 2rem;
+    background: radial-gradient(circle at top left, #ff6f61, #d32f2f);
+    color: #fff;
     text-align: center;
-    border-radius: 12px;
+    border-radius: 20px;
     position: relative;
     overflow: hidden; /* Ensure content doesn't overflow */
 }
 
 /* Title */
 .portfolio-title {
-    font-size: 2.5rem;
-    color: #2c3e50;
-    margin-bottom: 0.5rem; /* Reduced margin for better spacing with separator */
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
     font-family: 'Poppins', sans-serif;
-    position: relative;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* Separator */
 .separator {
     height: 4px;
-    width: 60px; /* Adjust width as needed */
-    background-color: #3498db;
-    margin: 0 auto 2rem; /* Center the separator and space it from the title */
+    width: 100px; /* Adjust width as needed */
+    background-color: #ffeb3b;
+    margin: 0 auto 2rem;
+    border-radius: 2px;
 }
 
 /* Slider */
 .portfolio-slider {
     width: 100%;
-    padding: 0 1rem; /* Adjusted padding for better alignment */
+    padding: 0 2rem; /* Adjusted padding for better alignment */
 }
 
 /* Portfolio Item */
 .portfolio-item {
-    background-color: #ffffff;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-    min-height: 450px; /* Ensure a minimum height */
-    max-width: 350px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease, background-color 0.4s ease;
+    min-height: 500px;
+    max-width: 360px;
     margin: auto;
+    overflow: hidden; /* Ensure content doesn't overflow */
 }
 
 /* Project Description */
 .project-description {
-    font-size: 1rem;
-    color: #444;
+    font-size: 1.2rem;
+    color: #333;
     text-align: center;
-    margin: 1rem 0; /* Add vertical margin for spacing */
-    padding: 0 1rem; /* Padding for better readability */
-    overflow: hidden; /* Hide overflow to avoid breaking layout */
-    min-height: 80px; /* Minimum height for descriptions */
+    margin: 1.5rem 0;
+    padding: 0 1.5rem;
+    overflow: hidden;
+    min-height: 100px;
     display: flex;
     align-items: center;
 }
 
 /* Portfolio Item Hover Effect */
 .portfolio-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.08);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+    background-color: #f5f5f5;
 }
 
 /* Image Container */
 .portfolio-image-container {
     width: 100%;
     margin-bottom: 1.5rem;
-    max-height: 200px;
+    max-height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-image:hover {
+    transform: scale(1.1);
 }
 
 /* Project Title */
 .project-title {
-    font-size: 1.8rem;
-    color: #3498db;
+    font-size: 2.2rem;
+    color: #d32f2f;
     margin-bottom: 1rem;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    font-weight: bold;
 }
 
 /* Links */
 .project-links {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .project-link, .project-doc {
     text-decoration: none;
-    color: #3498db;
+    color: #fff;
     font-weight: 600;
-    border: 2px solid #3498db;
+    border: 2px solid #fff;
     border-radius: 8px;
-    padding: 0.6rem 1.2rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 0.8rem 1.5rem;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .project-link:hover, .project-doc:hover {
-    background-color: #3498db;
-    color: white;
+    background-color: #fff;
+    color: #d32f2f;
 }
 
 /* Tags */
 .project-tags {
     display: flex;
-    flex-wrap: wrap; /* Allow tags to wrap onto multiple lines */
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .project-tag {
-    background-color: #e1ecf4;
-    color: #3498db;
-    padding: 0.3rem 0.7rem;
-    font-size: 0.9rem;
+    background-color: #ffeb3b;
+    color: #d32f2f;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
     font-weight: 600;
     border-radius: 12px;
-    margin: 0.3rem; /* Reduced margin for better spacing */
+    margin: 0.5rem;
 }
 
 /* Empty State */
 .empty-state-image {
     margin-top: 2rem;
-    width: 150px;
-    opacity: 0.7;
+    width: 180px;
+    opacity: 0.8;
 }
 
 /* Tag Filter */
 .tag-filter {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .tag-button {
-    background-color: #3498db;
+    background-color: #d32f2f;
     color: white;
     border: none;
     border-radius: 8px;
-    padding: 0.6rem 1.2rem;
-    margin: 0 0.5rem;
-    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .tag-button.active {
-    background-color: #2c3e50;
+    background-color: #ffeb3b;
+    color: #d32f2f;
 }
 
 .tag-button:hover {
-    background-color: #2c3e50;
+    background-color: #ffeb3b;
+    color: #d32f2f;
 }
 
 /* Description Wrapper */
 .description-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    flex-grow: 1; /* Allow wrapper to take available space */
+    justify-content: center;
+    flex-grow: 1;
 }
 
 /* Responsive adjustments for tablets */
 @media (max-width: 1024px) {
     .portfolio-title {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .portfolio-item {
-        padding: 1rem;
-        max-width: 300px;
+        padding: 1.5rem;
+        max-width: 320px;
     }
 
     .project-title {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
 
     .portfolio-image-container {
-        max-height: 180px;
-    }
-
-    .portfolio-image {
-        object-fit: contain;
+        max-height: 220px;
     }
 }
 
 /* Responsive adjustments for small devices */
 @media (max-width: 768px) {
     .portfolio-section {
-        padding: 3rem 1rem;
+        padding: 5rem 1.5rem;
     }
 
     .portfolio-title {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
 
     .portfolio-item {
-        max-width: 100%; /* Full width on smaller screens */
-        min-height: 400px;
+        max-width: 100%;
+        min-height: 450px;
     }
 
     .project-title {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 
     .project-description {
-        font-size: 0.9rem;
-        min-height: 60px; /* Reduced for smaller screens */
+        font-size: 1.1rem;
+        min-height: 70px;
     }
 
     .portfolio-image-container {
-        max-height: 160px;
+        max-height: 200px;
     }
 }
 
 /* Responsive adjustments for extra small devices */
 @media (max-width: 480px) {
     .portfolio-title {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .portfolio-item {
-        min-height: 350px;
+        min-height: 400px;
     }
 
     .project-title {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     .project-description {
-        font-size: 0.85rem;
-        min-height: 50px;
+        font-size: 1rem;
+        min-height: 60px;
     }
 
     .portfolio-image-container {
-        max-height: 140px;
+        max-height: 180px;
     }
 
     .project-links {
@@ -257,8 +267,8 @@
     }
 
     .tag-button {
-        padding: 0.4rem 0.8rem;
-        margin: 0.3rem;
-        font-size: 0.8rem;
+        padding: 0.6rem 1.2rem;
+        margin: 0.4rem;
+        font-size: 0.9rem;
     }
 }

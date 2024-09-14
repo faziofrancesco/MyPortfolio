@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
-import {portfolioData, trad1} from '../data';
+import { portfolioData, trad1 } from '../data';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Portfolio.css';
@@ -9,7 +9,7 @@ import './styles.css';
 const Portfolio = ({ language }) => {
     const [filteredData, setFilteredData] = useState(portfolioData);
     const [selectedTags, setSelectedTags] = useState([]);
-    const title = trad1[language]?.skillsTitle || 'Skills';
+    const title = trad1[language]?.skillsTitle || 'Portfolio';
 
     useEffect(() => {
         if (selectedTags.length > 0) {

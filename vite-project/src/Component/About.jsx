@@ -1,10 +1,9 @@
 import React from "react";
 import './About.css';
 import './styles.css';
-import { translations} from '../data';
+import { translations } from '../data';
 
 const About = ({ language }) => {
-    // Recupera il titolo e il testo per la lingua corrente
     const { aboutTitle, aboutText } = translations[language] || {};
 
     return (
